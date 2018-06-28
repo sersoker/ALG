@@ -1,0 +1,92 @@
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <fstream>
+#include <string>
+#include <vector>
+#include "creaMatriz.cpp"
+using namespace std;
+
+bool buscaCiudad(vector <int> &pos_ciudades, int indice){
+  for (int i = 0; i < pos_ciudades.size(); i++)
+    if(pos_ciudades[i]==indice)
+      return false;
+  return true;
+}
+
+
+int greedyVecinos ( vector <int> &orden_ciudades, char* ruta ){
+//primero se sacan los datos del archivo (coordenadas)
+	vector <int> vx,vy;
+	coordenadas(ruta,vx,vy);
+//Luego se genera la matriz de distancias en ma
+	vector <vector <int> > distancias(vx.size(),vector<int>(vx.size()));
+	matriz(distancias,vx,vy);
+// for que muestra las distancias en forma de matriz
+ 	for (int i=0; i<distancias.size();i++){
+	 for (int j=0; j<distancias.size();j++)
+	   cout << distancias[i][j]<< " ";
+	 cout << endl;
+        }
+int menorx,mayorx,mayory;
+menorx=0;
+mayory=0;
+mayorx=0;
+// Sacamos los indices de las ciudades necesarias.
+for(int i=0;i<distancias.size();i++)
+	if(vx[i]<vx[menorx])
+		menorx=i;
+for(int i=0;i<distancias.size();i++)
+	if(vx[i]>vx[mayorx])
+		mayorx=i;
+for(int i=0;i<distancias.size();i++)
+	if(vy[i]>vy[mayory])
+		if(i!=mayorx&&i!=menorx)
+			mayory=i;
+//Metemos las ciudades en el listado y obtenemos su distancia.
+  vector <int> ciudades;
+ciudades.push_back(menorx);
+ciudades.push_back(mayory);
+ciudades.push_back(mayorx);
+int distanciaC=distancias[menorx][mayory]+distancias[mayory][mayorx]+distancias[mayorx][menorx];
+while(ciudades.size()<distancias.size()){
+	int posicion;
+	int copiaDistancia=99999999;
+	int ciu;
+	for(int i=0;i<distancias.size();i++)
+		if(buscaCiudad(ciudades,i))
+			for(int j=0;j<ciudades.size();j++){
+				int medio=distancias[ciudades[j]][i] + distancias[i][ciudades[(j+1)%ciudades.size()]];//Distancias entre ciudades ya cogidas con nueva ciudad en medio
+				int inicio=distancias[ciudades [j]][ciudades[(j+1)%ciudades.size()]];//Distancia entre las dos ciudades donde se intenta meter la nueva ciudad
+				if(distanciaC-inicio+medio<copiaDistancia){
+				  copiaDistancia=(distanciaC-inicio)+medio;
+				  posicion=j;//Ciudad delante de la que se debe insertar la nueva ciudad
+				  ciu=i;//Ciudad a insertar en nuestros nodos
+				}
+			}
+    distanciaC=copiaDistancia;
+    vector <int> nuevasCiudades;
+	for(int i=0;i<ciudades.size();i++)
+		if(i==posicion){
+			nuevasCiudades.push_back(ciudades[i]);
+			nuevasCiudades.push_back(ciu);
+		}
+		else
+			nuevasCiudades.push_back(ciudades[i]);
+    ciudades=nuevasCiudades;
+    nuevasCiudades.clear();
+}
+orden_ciudades=ciudades;
+return distanciaC;
+}
+
+int main (int argc, char *argv[]){
+  if ( argc < 2 ){
+    cout << "Falta ruta de archivo de coordenadas de ciudades\n" << endl;
+    exit(-1);
+  }
+  vector <int> pos_ciudades;
+  cout << "Distancia mínima: "<< greedyVecinos (pos_ciudades, argv[1])<<endl;
+  for (int i = 0; i < pos_ciudades.size(); i++)
+    cout << pos_ciudades[i]<<endl;
+}

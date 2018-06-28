@@ -1,0 +1,222 @@
+aaronportatil@aaronportatil-K56CB:~/Dropbox/Universidad/2º/2º Cuatrimestre/ALG/practicasALG/P4parte2$ ./viajanteBBModificadoCalculoCota 2-15/PruebaTamaño\ \(3\).tsp 
+Distancia mínima: 2417
+Nº de nodos expandidos: 2
+Tamanio máximo de la cola con prioridad de nodos vivos: 2
+Nº de veces podadas: 2
+Nº ciudades del archivo de entrada: 3
+Tiempo empleado en algoritmo: 0.000457
+Recorrido: 
+1
+2
+0
+aaronportatil@aaronportatil-K56CB:~/Dropbox/Universidad/2º/2º Cuatrimestre/ALG/practicasALG/P4parte2$ ./viajanteBBModificadoCalculoCota 2-15/PruebaTamaño\ \(4\).tsp 
+Distancia mínima: 2313
+Nº de nodos expandidos: 8
+Tamanio máximo de la cola con prioridad de nodos vivos: 6
+Nº de veces podadas: 5
+Nº ciudades del archivo de entrada: 4
+Tiempo empleado en algoritmo: 0.000567
+Recorrido: 
+0
+3
+2
+1
+aaronportatil@aaronportatil-K56CB:~/Dropbox/Universidad/2º/2º Cuatrimestre/ALG/practicasALG/P4parte2$ ./viajanteBBModificadoCalculoCota 2-15/PruebaTamaño\ \(5\).tsp 
+Distancia mínima: 885
+Nº de nodos expandidos: 24
+Tamanio máximo de la cola con prioridad de nodos vivos: 21
+Nº de veces podadas: 21
+Nº ciudades del archivo de entrada: 5
+Tiempo empleado en algoritmo: 0.001224
+Recorrido: 
+1
+3
+2
+4
+0
+aaronportatil@aaronportatil-K56CB:~/Dropbox/Universidad/2º/2º Cuatrimestre/ALG/practicasALG/P4parte2$ ./viajanteBBModificadoCalculoCota 2-15/PruebaTamaño\ \(6\).tsp 
+Distancia mínima: 1837
+Nº de nodos expandidos: 78
+Tamanio máximo de la cola con prioridad de nodos vivos: 81
+Nº de veces podadas: 81
+Nº ciudades del archivo de entrada: 6
+Tiempo empleado en algoritmo: 0.004247
+Recorrido: 
+2
+3
+5
+1
+4
+0
+aaronportatil@aaronportatil-K56CB:~/Dropbox/Universidad/2º/2º Cuatrimestre/ALG/practicasALG/P4parte2$ ./viajanteBBModificadoCalculoCota 2-15/PruebaTamaño\ \(7\).tsp 
+Distancia mínima: 134
+Nº de nodos expandidos: 66
+Tamanio máximo de la cola con prioridad de nodos vivos: 138
+Nº de veces podadas: 137
+Nº ciudades del archivo de entrada: 7
+Tiempo empleado en algoritmo: 0.005604
+Recorrido: 
+0
+2
+1
+4
+3
+5
+6
+aaronportatil@aaronportatil-K56CB:~/Dropbox/Universidad/2º/2º Cuatrimestre/ALG/practicasALG/P4parte2$ ./viajanteBBModificadoCalculoCota 2-15/PruebaTamaño\ \(8\).tsp 
+Distancia mínima: 131
+Nº de nodos expandidos: 1292
+Tamanio máximo de la cola con prioridad de nodos vivos: 1704
+Nº de veces podadas: 1703
+Nº ciudades del archivo de entrada: 8
+Tiempo empleado en algoritmo: 0.067415
+Recorrido: 
+0
+1
+4
+7
+6
+3
+5
+2
+aaronportatil@aaronportatil-K56CB:~/Dropbox/Universidad/2º/2º Cuatrimestre/ALG/practicasALG/P4parte2$ ./viajanteBBModificadoCalculoCota 2-15/PruebaTamaño\ \(9\).tsp 
+Distancia mínima: 149
+Nº de nodos expandidos: 165
+Tamanio máximo de la cola con prioridad de nodos vivos: 515
+Nº de veces podadas: 514
+Nº ciudades del archivo de entrada: 9
+Tiempo empleado en algoritmo: 0.019068
+Recorrido: 
+0
+6
+7
+4
+5
+1
+3
+2
+8
+aaronportatil@aaronportatil-K56CB:~/Dropbox/Universidad/2º/2º Cuatrimestre/ALG/practicasALG/P4parte2$ ./viajanteBBModificadoCalculoCota 2-15/PruebaTamaño\ \(10\).tsp 
+Distancia mínima: 44
+Nº de nodos expandidos: 14095
+Tamanio máximo de la cola con prioridad de nodos vivos: 27886
+Nº de veces podadas: 27885
+Nº ciudades del archivo de entrada: 10
+Tiempo empleado en algoritmo: 0.488918
+Recorrido: 
+0
+3
+1
+2
+7
+4
+5
+6
+8
+9
+aaronportatil@aaronportatil-K56CB:~/Dropbox/Universidad/2º/2º Cuatrimestre/ALG/practicasALG/P4parte2$ ./viajanteBBModificadoCalculoCota 2-15/PruebaTamaño\ \(11\).tsp 
+Distancia mínima: 425
+Nº de nodos expandidos: 48572
+Tamanio máximo de la cola con prioridad de nodos vivos: 102793
+Nº de veces podadas: 102792
+Nº ciudades del archivo de entrada: 11
+Tiempo empleado en algoritmo: 1.80623
+Recorrido: 
+0
+3
+6
+8
+10
+1
+2
+4
+9
+5
+7
+aaronportatil@aaronportatil-K56CB:~/Dropbox/Universidad/2º/2º Cuatrimestre/ALG/practicasALG/P4parte2$ ./viajanteBBModificadoCalculoCota 2-15/PruebaTamaño\ \(12\).tsp 
+Distancia mínima: 9769
+Nº de nodos expandidos: 28763
+Tamanio máximo de la cola con prioridad de nodos vivos: 93332
+Nº de veces podadas: 93331
+Nº ciudades del archivo de entrada: 12
+Tiempo empleado en algoritmo: 1.49782
+Recorrido: 
+0
+7
+3
+5
+9
+10
+8
+6
+11
+2
+4
+1
+aaronportatil@aaronportatil-K56CB:~/Dropbox/Universidad/2º/2º Cuatrimestre/ALG/practicasALG/P4parte2$ ./viajanteBBModificadoCalculoCota 2-15/PruebaTamaño\ \(13\).tsp 
+Distancia mínima: 10055
+Nº de nodos expandidos: 85038
+Tamanio máximo de la cola con prioridad de nodos vivos: 317303
+Nº de veces podadas: 317302
+Nº ciudades del archivo de entrada: 13
+Tiempo empleado en algoritmo: 5.20555
+Recorrido: 
+0
+7
+3
+5
+9
+10
+8
+6
+11
+2
+4
+12
+1
+aaronportatil@aaronportatil-K56CB:~/Dropbox/Universidad/2º/2º Cuatrimestre/ALG/practicasALG/P4parte2$ ./viajanteBBModificadoCalculoCota 2-15/PruebaTamaño\ \(14\).tsp 
+Distancia mínima: 10093
+Nº de nodos expandidos: 243323
+Tamanio máximo de la cola con prioridad de nodos vivos: 1020814
+Nº de veces podadas: 1020813
+Nº ciudades del archivo de entrada: 14
+Tiempo empleado en algoritmo: 17.1585
+Recorrido: 
+0
+1
+12
+4
+13
+2
+11
+6
+8
+10
+9
+5
+3
+7
+aaronportatil@aaronportatil-K56CB:~/Dropbox/Universidad/2º/2º Cuatrimestre/ALG/practicasALG/P4parte2$ ./viajanteBBModificadoCalculoCota 2-15/PruebaTamaño\ \(15\).tsp 
+Distancia mínima: 11167
+Nº de nodos expandidos: 487339
+Tamanio máximo de la cola con prioridad de nodos vivos: 2565245
+Nº de veces podadas: 2565244
+Nº ciudades del archivo de entrada: 15
+Tiempo empleado en algoritmo: 44.0602
+Recorrido: 
+0
+14
+12
+5
+7
+4
+1
+2
+3
+13
+9
+10
+8
+6
+11
+

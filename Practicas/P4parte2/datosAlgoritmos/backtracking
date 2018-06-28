@@ -1,0 +1,222 @@
+aaronportatil@aaronportatil-K56CB:~/Dropbox/Universidad/2º/2º Cuatrimestre/ALG/p
+racticasALG/P4parte2$ ./viajanteBacktracking 2-15/PruebaTamaño\ \(3\).tsp 
+Distancia total mínima: 2417
+Nº de nodos expandidos: 2
+Nº de veces podadas: 1
+Nº ciudades del archivo de entrada: 3
+Tiempo en ejecutar algoritmo: 0.000364
+Recorrido: 
+1
+2
+0
+aaronportatil@aaronportatil-K56CB:~/Dropbox/Universidad/2º/2º Cuatrimestre/ALG/p
+racticasALG/P4parte2$ ./viajanteBacktracking 2-15/PruebaTamaño\ \(4\).tsp 
+Distancia total mínima: 2313
+Nº de nodos expandidos: 8
+Nº de veces podadas: 2
+Nº ciudades del archivo de entrada: 4
+Tiempo en ejecutar algoritmo: 0.000439
+Recorrido: 
+0
+1
+2
+3
+aaronportatil@aaronportatil-K56CB:~/Dropbox/Universidad/2º/2º Cuatrimestre/ALG/p
+racticasALG/P4parte2$ ./viajanteBacktracking 2-15/PruebaTamaño\ \(5\).tsp 
+Distancia total mínima: 885
+Nº de nodos expandidos: 24
+Nº de veces podadas: 11
+Nº ciudades del archivo de entrada: 5
+Tiempo en ejecutar algoritmo: 0.0007
+Recorrido: 
+1
+3
+2
+4
+0
+aaronportatil@aaronportatil-K56CB:~/Dropbox/Universidad/2º/2º Cuatrimestre/ALG/p
+racticasALG/P4parte2$ ./viajanteBacktracking 2-15/PruebaTamaño\ \(6\).tsp 
+Distancia total mínima: 1837
+Nº de nodos expandidos: 78
+Nº de veces podadas: 54
+Nº ciudades del archivo de entrada: 6
+Tiempo en ejecutar algoritmo: 0.001686
+Recorrido: 
+2
+3
+5
+1
+4
+0
+aaronportatil@aaronportatil-K56CB:~/Dropbox/Universidad/2º/2º Cuatrimestre/ALG/p
+racticasALG/P4parte2$ ./viajanteBacktracking 2-15/PruebaTamaño\ \(7\).tsp 
+Distancia total mínima: 134
+Nº de nodos expandidos: 89
+Nº de veces podadas: 147
+Nº ciudades del archivo de entrada: 7
+Tiempo en ejecutar algoritmo: 0.002872
+Recorrido: 
+0
+2
+1
+4
+3
+5
+6
+aaronportatil@aaronportatil-K56CB:~/Dropbox/Universidad/2º/2º Cuatrimestre/ALG/p
+racticasALG/P4parte2$ ./viajanteBacktracking 2-15/PruebaTamaño\ \(8\).tsp 
+Distancia total mínima: 131
+Nº de nodos expandidos: 1373
+Nº de veces podadas: 1352
+Nº ciudades del archivo de entrada: 8
+Tiempo en ejecutar algoritmo: 0.032053
+Recorrido: 
+0
+1
+4
+7
+6
+3
+5
+2
+aaronportatil@aaronportatil-K56CB:~/Dropbox/Universidad/2º/2º Cuatrimestre/ALG/p
+racticasALG/P4parte2$ ./viajanteBacktracking 2-15/PruebaTamaño\ \(9\).tsp 
+Distancia total mínima: 149
+Nº de nodos expandidos: 455
+Nº de veces podadas: 1185
+Nº ciudades del archivo de entrada: 9
+Tiempo en ejecutar algoritmo: 0.020894
+Recorrido: 
+0
+6
+7
+4
+5
+1
+3
+2
+8
+aaronportatil@aaronportatil-K56CB:~/Dropbox/Universidad/2º/2º Cuatrimestre/ALG/p
+racticasALG/P4parte2$ ./viajanteBacktracking 2-15/PruebaTamaño\ \(10\).tsp 
+Distancia total mínima: 44
+Nº de nodos expandidos: 14384
+Nº de veces podadas: 26479
+Nº ciudades del archivo de entrada: 10
+Tiempo en ejecutar algoritmo: 0.240124
+Recorrido: 
+0
+2
+1
+3
+7
+4
+5
+6
+8
+9
+aaronportatil@aaronportatil-K56CB:~/Dropbox/Universidad/2º/2º Cuatrimestre/ALG/p
+racticasALG/P4parte2$ ./viajanteBacktracking 2-15/PruebaTamaño\ \(11\).tsp 
+Distancia total mínima: 425
+Nº de nodos expandidos: 96220
+Nº de veces podadas: 178468
+Nº ciudades del archivo de entrada: 11
+Tiempo en ejecutar algoritmo: 1.3517
+Recorrido: 
+0
+3
+6
+8
+10
+1
+2
+4
+9
+5
+7
+aaronportatil@aaronportatil-K56CB:~/Dropbox/Universidad/2º/2º Cuatrimestre/ALG/p
+racticasALG/P4parte2$ ./viajanteBacktracking 2-15/PruebaTamaño\ \(12\).tsp 
+Distancia total mínima: 9769
+Nº de nodos expandidos: 28901
+Nº de veces podadas: 92586
+Nº ciudades del archivo de entrada: 12
+Tiempo en ejecutar algoritmo: 0.693794
+Recorrido: 
+0
+1
+4
+2
+11
+6
+8
+10
+9
+5
+3
+7
+aaronportatil@aaronportatil-K56CB:~/Dropbox/Universidad/2º/2º Cuatrimestre/ALG/p
+racticasALG/P4parte2$ ./viajanteBacktracking 2-15/PruebaTamaño\ \(13\).tsp 
+Distancia total mínima: 10055
+Nº de nodos expandidos: 86555
+Nº de veces podadas: 321853
+Nº ciudades del archivo de entrada: 13
+Tiempo en ejecutar algoritmo: 2.31749
+Recorrido: 
+0
+1
+12
+4
+2
+11
+6
+8
+10
+9
+5
+3
+7
+aaronportatil@aaronportatil-K56CB:~/Dropbox/Universidad/2º/2º Cuatrimestre/ALG/p
+racticasALG/P4parte2$ ./viajanteBacktracking 2-15/PruebaTamaño\ \(14\).tsp 
+Distancia total mínima: 10093
+Nº de nodos expandidos: 247205
+Nº de veces podadas: 1036310
+Nº ciudades del archivo de entrada: 14
+Tiempo en ejecutar algoritmo: 7.54587
+Recorrido: 
+0
+1
+12
+4
+13
+2
+11
+6
+8
+10
+9
+5
+3
+7
+aaronportatil@aaronportatil-K56CB:~/Dropbox/Universidad/2º/2º Cuatrimestre/ALG/p
+racticasALG/P4parte2$ ./viajanteBacktracking 2-15/PruebaTamaño\ \(15\).tsp 
+Distancia total mínima: 11167
+Nº de nodos expandidos: 1238435
+Nº de veces podadas: 6016848
+Nº ciudades del archivo de entrada: 15
+Tiempo en ejecutar algoritmo: 45.8947
+Recorrido: 
+0
+11
+6
+8
+10
+9
+13
+3
+2
+1
+4
+7
+5
+12
+14
+

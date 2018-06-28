@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "" >> squicksort.dat
+@i = 1000
+while ( $i < 100000 )
+./quicksort $i >> squicksort.dat
+@i += 1000
+end
+

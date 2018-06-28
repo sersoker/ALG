@@ -1,0 +1,17 @@
+#include <iostream>
+#include <vector>
+
+vector[double][double] creaMatriz ( string ruta ){
+  ifstream archivo;
+  archivo.open(ruta);
+  string linea_archivo, linea_otro;
+
+  while (!archivo.eof()){
+    getline(archivo,linea_archivo);
+    ifstream otro;
+    otro.open(ruta);
+    while (!otro.eof()){
+      
+    }
+  }
+}

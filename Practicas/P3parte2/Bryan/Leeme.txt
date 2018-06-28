@@ -1,0 +1,18 @@
+﻿Si se compila el greedyVecino.cpp, y se ejecuta pasandole como parametro un archivo, genera la matriz de distancias euclideas directamente
+
+la matriz se llama ma, y se puede acceder a las posiciones ma[x][y] siendo tanto x como y de tamaño maximo ma.size(). 
+
+Hay un for de ejemplo donde se ve cual es el margen.
+
+
+
+Ahora bien, ya tenemos las distancias, falta hacer el greedy en si.
+
+
+
+Para hacer el vector de solucion se necesitan las posiciones x e y de las ciudades, hay dos vectores vx,vy
+
+
+Estos vectores tienen en la posicion 0 la coordenada x e y de la ciudad 0, vamos cuando se sabe la ciudad (n) se busca su posicion
+en el vector y se puede saber las coordenadas.
+

@@ -1,0 +1,56 @@
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <fstream>
+#include <string>
+#include <vector>
+#include "creaMatriz.cpp"
+using namespace std;
+
+int greedyVecinos ( vector <vector <double> > &orden_ciudades, char* ruta ){
+  vector <vector <double> > distancias = creaMatriz(ruta);  //Creamos la matriz de distancias
+  int ciudad_actual,ciudad_mas_cercana;
+  double distancia, distancia_total, mejor_distancia_total = 99999999;
+  vector <int> ciudades, mejor_recorrido;
+
+  for(int i = 0; i < distancias.size();i++){//Mientras no hayamos hecho todos los recorridos (para ver quien tiene la distancia minima)
+    //Candidatos: todas las ciudades 
+    distancia_total = 0;
+    ciudades.clear();
+    ciudades.push_back(i+1);//Seleccionados: ciudades que ya hayamos seleccionado para este recorrido
+    ciudad_actual = i+1;//Lo de +1 es porque en la matriz las ciudades estan corridas 1 espacio antes
+    while(ciudades.size()<distancias.size()){//Función solución: cuando ya hayamos seleccionado todos los candidatos
+      distancia = 99999999;
+      //Función factibilidad: este algoritmo es factible en cualquier situación ya que se puede ir de cualquier ciudad a cualquier otra
+      //Función de selección: buscamos la siguiente ciudad con menos distancia hasta la actual, la insertamos en seleccionados, y nos movemos a ella
+      for (int j = 0; j < distancias.size(); j++){
+        if (distancia > distancias[i][j] && i!=j){
+          distancia = distancias[i][j];
+          ciudad_mas_cercana = j+1;
+        }
+      }
+      distancia_total+=distancias[i][ciudad_mas_cercana-1];
+      ciudad_actual=ciudad_mas_cercana;
+      ciudades.push_back(ciudad_actual);
+    }
+    //Recordemos sumar la distancia de la primera ciudad a la última
+    distancia_total+=distancias[ciudades[0]-1][ciudades[ciudades.size()-1]-1];
+    //Comparamos si este recorrido es mejor que el anterior, y lo tomamos como mejor recorrido
+    if (mejor_distancia_total>distancia_total){
+      mejor_distancia_total = distancia_total;
+      mejor_recorrido = ciudades;
+    }
+  }
+  //Función objetivo: la selección de ciudades en el orden que tengan la menor distancia
+  return mejor_distancia_total;
+}
+
+int main (int argc, char *argv[]){
+  if ( argc < 2 ){
+    cout << "Falta ruta de archivo de coordenadas de ciudades\n" << endl;
+    exit(-1);
+  }
+  vector <vector <double> > pos_ciudades;
+  int distancia_minima = greedyVecinos (pos_ciudades, argv[1]);
+  //cout << distancia_minima << endl;
+}

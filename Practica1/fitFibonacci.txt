@@ -1,0 +1,23 @@
+gnuplot> fit h(x) "ssfibonacci.dat" via a0
+iter      chisq       delta/lim  lambda   a0           
+   0 1.1531042003e+27   0.00e+00  4.85e+12    2.781279e-08
+   1 4.6124168012e+23  -2.50e+08  4.85e+11    5.562557e-10
+   2 1.9202560384e+16  -2.40e+12  4.85e+10    1.134985e-13
+   3 8.1353375209e+04  -2.36e+16  4.85e+09    3.202953e-19
+   4 1.3763792246e+03  -5.81e+06  4.85e+08    8.866640e-20
+   5 1.3763792246e+03  -2.43e-09  4.85e+07    8.866639e-20
+iter      chisq       delta/lim  lambda   a0           
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1376.38
+rel. change during last iteration : -2.4284e-14
+
+degrees of freedom    (FIT_NDF)                        : 48
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 5.35486
+variance of residuals (reduced chisquare) = WSSR/ndf   : 28.6746
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a0              = 8.86664e-20      +/- 4.386e-21    (4.947%)
+gnuplot> 
+

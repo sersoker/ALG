@@ -1,0 +1,79 @@
+#ifndef __CREA_MATRIZ
+#define __CREA_MATRIZ
+#include <iostream>
+#include <fstream>
+#include <vector>
+#include <cstdio>
+#include <math.h>
+using namespace std;
+
+vector <vector <double> > creaMatriz ( char* ruta ){
+  vector <vector <double> > matriz;
+  vector <double> fila;
+  ifstream archivo1,archivo2;
+  archivo1.open(ruta);
+
+  string linea1, linea2, x1, x2, y1, y2;
+  int coord_x1,coord_x2,coord_y1,coord_y2;
+  string::iterator it1,it2;
+
+  getline(archivo1,linea1);//Primera línea donde pone: "DIMENSION ..."
+
+  while (!archivo1.eof()){
+    fila.clear();
+    x1.clear();
+    y1.clear();
+    getline(archivo1,linea1);
+    it1=linea1.begin();
+    //Conseguimos las coordenadas
+    while (*it1==' ') it1++; //Nos saltamos los espacios iniciales si tiene
+    while (*it1!=' ') it1++; //Ahora nos saltamos en numero de ciudad
+    while (*it1==' ') it1++; //Y de nuevo los espacios
+    while (*it1!=' '){       //Coordenada x
+      x1 += (*it1);
+      it1++;
+    }
+    while (*it1==' ') it1++;
+    while (it1!=linea1.end()){//Coordenada y
+      y1 += (*it1);
+      it1++;
+    }
+    //Pasamos las coordenadas a int;
+    coord_x1 = atoi(x1.c_str());
+    coord_y1 = atoi(y1.c_str());
+
+    archivo2.open(ruta);
+    getline(archivo2,linea2);//Primera línea donde pone: "DIMENSION ..."
+
+    while (!archivo2.eof()){
+      x2.clear();
+      y2.clear();
+      getline(archivo2,linea2);
+      it2=linea2.begin();
+      //Conseguimos las coordenadas
+      while (*it2==' ') it2++; //Nos saltamos los espacios iniciales si tiene
+      while (*it2!=' ') it2++; //Ahora nos saltamos en numero de ciudad
+      while (*it2==' ') it2++; //Y de nuevo los espacios
+      while (*it2!=' '){       //Coordenada x
+        x2 += (*it2);
+        it2++;
+      }
+      while (*it2==' ') it2++;
+      while (it2!=linea2.end()){//Coordenada y
+        y2 += (*it2);
+        it2++;
+      }
+      //Pasamos las coordenadas a int;
+      coord_x2 = atoi(x2.c_str());
+      coord_y2 = atoi(y2.c_str());  
+
+      //Calculamos las distancias euclídeas entre ciudades 
+      fila.push_back(sqrt((coord_x1-coord_x2)*(coord_x1-coord_x2)+(coord_y1-coord_y2)*(coord_y1-coord_y2)));
+    }
+    archivo2.close();
+    matriz.push_back(fila);
+  }
+//  archivo1.close();
+}
+
+#endif

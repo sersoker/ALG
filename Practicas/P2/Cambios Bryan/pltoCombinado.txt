@@ -1,0 +1,10 @@
+f(x) = a0*log(x)*a1
+fit f(x) "divide.dat" via a0,a1
+
+g(x) = a0*x
+fit g(x) "basico.dat" via a0
+
+
+
+plot "basico.dat" title "Puntos Algoritmo Basico", "divide.dat" title "Puntos Algoritmo Divide y Venceras", g(x) title "Curva Basico", f(x) title "Curva Divide"
+
